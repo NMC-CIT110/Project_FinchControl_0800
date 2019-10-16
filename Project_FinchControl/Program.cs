@@ -237,7 +237,7 @@ namespace Project_FinchControl
             maxSeconds = DisplayGetMaxSeconds();
             threshold = DisplayGetThreshold(finchRobot, alarmType);
 
-            // warn the user
+            // warn the user and pause
 
             thresholdExceeded = MonitorLightLevels(finchRobot, threshold, maxSeconds);
 
